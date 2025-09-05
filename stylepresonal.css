@@ -242,3 +242,39 @@ footer{
         width: 20em;
     }
 }
+@media (max-width:400px) {
+    header{
+        background-color: rgb(7, 37, 64);
+        padding: 12px 20px;
+    }
+    .navigation a{
+        font-size: 1em;
+       
+        padding: 3px;
+    }
+    .title{
+        font-size: 1.3em;
+    }
+    section{
+        padding:70px 15px;
+    }
+    .main{
+        min-height: 70vh;
+    }
+    .main-content h2{
+      font-size: 1em;
+    }
+
+    .main-content h2{
+        font-size: 1.4em;
+      }
+    .content{
+        flex-direction: column;
+        align-items: center;
+      }
+    .project-card{
+        width: 20em;
+    }
+}
+
+

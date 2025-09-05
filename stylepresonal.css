@@ -242,7 +242,7 @@ footer{
         width: 20em;
     }
 }
-@media (max-width:400px) {
+@media (max-width:415px) {
     header{
         background-color: rgb(7, 37, 64);
         padding: 12px 20px;
@@ -250,7 +250,7 @@ footer{
     .navigation a{
         font-size: 1em;
        
-        padding: 3px;
+        padding: 2px;
     }
     .title{
         font-size: 1.3em;
@@ -276,5 +276,6 @@ footer{
         width: 20em;
     }
 }
+
 
 

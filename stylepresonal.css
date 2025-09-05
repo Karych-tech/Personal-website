@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;scroll-behavior: smooth;
+    cursor: pointer;
+}
+header{
+    background-color: aliceblue;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+}
+.logo{
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navigation a{
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 20px;
+}
+.navigation a:hover{
+    color: brown;
+}
+section{
+    padding:70px 100px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(moi.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+.main h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #3a6cf4;
+    font-size: 2em;
+    font-weight: 400;
+}
+.main h3 {
+    color: aliceblue;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.mainBTN{
+    color: white;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    
+    display: inline-block;
+    padding: 0.937em 2.187em;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    transition-duration: 0.5s;
+}
+.mainBTN:hover{
+    color: #3a6cf4;
+    background-color: white;
+    transform: scale(1.1);
+}
+.socialICONS a{
+    color: white;
+    font-size: 1.7em;  /*in this case font size will not work beacuse the icons that i download is not icon format you can resize them from the their link*/
+    padding-left: 20px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.content{
+    display: flex;
+    justify-content:center;
+/*you should remember what are below*/
+flex-direction:row;
+flex-wrap:wrap;
+}
+.card{
+    background-color: white;
+    width: 20.25em;
+    box-shadow:0 5px 20px rgba(192, 102, 11, 0.3);
+    border-radius:15px;
+    padding: 25px;
+    margin:15px;
+    transition-duration: 0.5s;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow:0 5px 20px rgba(88, 4, 83, 0.3);
+}
+.icon{
+    text-align: center;
+    font-size: 5em; /*in this case font size will not work beacuse the icons that i download is not icon format you can resize them from the their link*/
+    color: #3a6cf4;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.Projects{
+    background-color: #000016;
+}
+.Projects .content{
+    margin-top: 40px;
+}
+
+.project-card{
+    background-color: aliceblue;
+    border: 1px solid #daac18;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition-duration: 0.5s;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-card:hover .project-image{
+    opacity: 0.9;
+}
+.project-image img{
+    width: 100%;
+}
+.project-info{
+    padding: 1em;
+}
+
+.project-category{
+    font-size: 0.8em;
+    color: black;
+}
+
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.more-details{
+    text-decoration: none;
+    color: #3a6cf4;
+}
+.more-details:hover{
+    color: #601cfc;
+}
+.contact .icon{
+    font-size: 3.5em;
+}
+
+.contact .info h3{
+    color: black;
+}
+.contact .info p{
+    font-size: 1.5em;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#000016;
+    color: white;
+    padding: 0.5em;
+}
+.footer-title{
+    font-size: 1em;
+    font-weight: 600;
+    
+}
+.footer-title span{
+    color: #3a6cf4;
+}
+
+
+@media (max-width:1023px) {
+    header{
+        background-color: rgb(7, 37, 64);
+        padding: 12px 20px;
+    }
+    .navigation a{
+        font-size: 1.1em;
+       
+        padding: 5px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding:80px 20px;
+    }
+    .main{
+        min-height: 80vh;
+    }
+    .main-content h2{
+      font-size: 1em;
+    }
+
+    .main-content h2{
+        font-size: 1.4em;
+      }
+    .content{
+        flex-direction: column;
+        align-items: center;
+      }
+    .project-card{
+        width: 20em;
+    }
+}
